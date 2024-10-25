@@ -1,1 +1,2 @@
 1.新建分之mac_dev并检出(切换到mmac_dev分支)
+2.提交后，推送时选择mac_dev分支推送到origin
