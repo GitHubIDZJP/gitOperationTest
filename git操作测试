@@ -2,6 +2,6 @@
 2.提交后，推送时选择mac_dev分支推送到origin
 3 然后每次操作的当前分之(mac_dev)提交后再选择当前操作的分支(mac_dev)推送到origin(每次都这样操作)
 注意：这只是分支推送到了origin,main分支并没有推送后，执行git clone操作，克隆下来的文件依旧不会有mac_dev的内容，
-先双击main分支，然后鼠标放置mac_dev分支处，右击--合并mac_dev至main，然后推送至origin，选择main分支，这样就把分支并合并到main分支了，而且还把main分支推送到origin了， 队友另外一端的source执行"抓取"，再执行"拉取"操作，队友电脑的Sourcetree打开的项目里才有我这边推送的代码
+先双击main分支，然后鼠标放置mac_dev分支处，右击--合并mac_dev至main，然后推送至origin，选择main分支，这样队友另外一端才有执行
 
 tag:拉取会把你本地仓库没有 而远程仓库有的更新写到你本地中，
