@@ -259,4 +259,4 @@ Main分支做代码更改 -提交-远程推送，当前分之是main
 执行git rebase main(变基到main)，不需要切换到 main 分支或把鼠标放到它旁边。你只需要确保当前在 mac_dev分支上
 
  反过来,
-mac_dev -->  main
+mac_dev  -->  main
