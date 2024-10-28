@@ -209,3 +209,5 @@ git push origin main feature-A
 
 版本落后问题解决法子:
 假如在main上执行了推送，然后mac_dev提示落后一个版本，直接把main合并到mac_dev就行，然后选择那个落后的mac_dev节点执行推送就行，这样main和mac_dev分支就会同一版本了
+
+main
