@@ -120,3 +120,18 @@ tag:
 将 main 的更改合并到 feature-A 是为了保持功能开发的顺利和稳定，确保在将功能合并到主分支之前一切都是正常的。
 将 feature-A 合并到 main 是在功能开发完成后将其整合到主代码库的过程。
 在实际的团队开发中，这两个操作通常是连续进行的：在 feature-A 分支上进行开发，确保它是基于最新的 main，然后在功能完成后再将它合并到 main 并推送到远程。这种方式有助于确保代码的稳定性和高效性。
+
+刚刚遇到了一个问题，那就是mac_dev分支，某个节点提示落后很多版本
+然后我从main切换到mac_dev分支时报错:
+error: Your local changes to the following files would be overwritten by checkout:
+	git操作测试
+Please commit your changes or stash them before you switch branches.
+Aborting
+错误：您对以下文件的本地更改将被签出覆盖：
+git操作测试
+请在切换分支之前提交或隐藏您的更改。
+流产
+原因:
+出现这个错误信息是因为你在当前分支上有未提交的更改。为了保护这些未提交的更改，Git 阻止了你进行分支切换
+解决办法:
+直接切换到mac_dev分支-进行执行"拉取"-，拉取下来的代码是那个那些落后版本的，然后右击main-合并main到——mac_dev分支就行，那就是主(main)代码最新的合并到分支里去了，那main跟mac_dev就一样了
