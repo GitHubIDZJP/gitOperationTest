@@ -260,3 +260,6 @@ Main分支做代码更改 -提交-远程推送，当前分之是main
 
  反过来,
 mac_dev  -->  main
+
+mac_dev做代码更改，提交 ，推送
+检出(切换)到main，鼠标放到mac_dev分支，选择弹出的“将当前变更变基到mac_dev”就行，然后直接推送到origin
