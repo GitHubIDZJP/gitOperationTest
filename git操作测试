@@ -251,4 +251,12 @@ A分支执行变基，然后要让main同步操作后的内容到分支A
 
 a分支执行了操作并提交了代码提交和推送，那需要切换回main分支，再执行“将当前变更变基到main"（a同步并合并到main）
 
-Main -  mac_dev
+main --->  mac_dev
+
+Main分支做代码更改 -提交-远程推送，当前分之是main
+检出（切换）分支到mac_dev,会提示 main超前一个版本，
+执行执行 git rebase main 就行，也就是“将当前变更变基到main”，再推送到origin就行
+执行git rebase main(变基到main)，不需要切换到 main 分支或把鼠标放到它旁边。你只需要确保当前在 mac_dev分支上
+
+ 反过来,
+mac_dev -->  main
